@@ -19,7 +19,7 @@
     }
   },
   "rules": {
-    "prettier/prettier": ["error", { "endOfLine": "lf" }],
+    "prettier/prettier": ["error", { "endOfLine": "auto" }],
     "no-use-before-define": 0,
     "import/no-extraneous-dependencies": "off",
     "import/no-unresolved": 0,
@@ -41,6 +41,13 @@
     "react/jsx-wrap-multilines": 0,
     "react/jsx-props-no-spreading": 0,
     "react/prop-types": 0,
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      },
+    ],
     "@typescript-eslint/ban-types": [
       "error",
       {
