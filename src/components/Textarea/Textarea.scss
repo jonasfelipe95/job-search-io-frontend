@@ -1,0 +1,14 @@
+@import '../../theme/variables.scss';
+
+.jsi-textarea-field {
+  height: 120px;
+  border-radius: 16px;
+  padding-left: 16px;
+  padding-top: 4px;
+  width: 400px;
+  font-size: 16px;
+  max-width: 100%;
+  background-color: transparent;
+  border: 1px solid #000;
+  resize: none;
+}
