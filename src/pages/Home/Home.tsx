@@ -1,20 +1,19 @@
 import { useStore } from 'effector-react';
 import React from 'react';
-import { useIntl } from 'react-intl';
 import WalletStore from 'stores/wallet/WalletStore';
+import { IWalletState } from 'stores/wallet/WalletStore.d';
 import connectWalletUseCase from 'useCases/wallet/ConnectWalletUseCase';
 
 const HomePage = () => {
-  const { walletAddress } = useStore(WalletStore);
-  const { formatMessage } = useIntl();
+  const { walletAddress } = useStore<IWalletState>(WalletStore);
 
   return (
     <div>
-      <h1>{formatMessage({ id: 'HOME_PAGE.TITLE' })}</h1>
+      <h1>HOME_PAGE.TITLE</h1>
       <br />
       <br />
-      <button type="button" onClick={() => connectWalletUseCase(formatMessage)}>
-        {formatMessage({ id: 'HOME_PAGE.CONNECT_WALLET_LABEL' })}
+      <button type="button" onClick={() => connectWalletUseCase()}>
+        'HOME_PAGE.CONNECT_WALLET_LABEL
       </button>
       <br />
       <br />

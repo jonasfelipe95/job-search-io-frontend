@@ -1,0 +1,68 @@
+@import '../../theme/variables.scss';
+
+.jsi-login-page {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.jsi-login-page-logo-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $dark-primary-color;
+  width: 50%;
+  padding: 32px;
+
+  img {
+    width: 680px;
+    max-width: 100%;
+    object-fit: contain;
+  }
+}
+
+.jsi-login-page-form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding: 16px;
+
+  h1 {
+    margin-bottom: 32px;
+    font-size: 32px;
+    color: $dark-primary-color;
+  }
+  form {
+    width: 400px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    a {
+      color: $dark-primary-color !important;
+      display: inline-block;
+      padding-top: 16px;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+  .jsi-login-form-group {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 32px;
+
+    label {
+      display: block;
+      padding-left: 16px;
+      padding-bottom: 8px;
+    }
+    input {
+      padding-left: 16px;
+    }
+  }
+}

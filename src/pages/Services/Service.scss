@@ -1,0 +1,32 @@
+@import '../../theme/variables.scss';
+
+.jsi-service {
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+
+  h3 {
+    color: $dark-secondary-color;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  p {
+    padding: 32px 0;
+  }
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    span {
+      color: $dark-primary-color;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+}
+.jsi-active-button{
+  background-color: #668180 !important;
+}
